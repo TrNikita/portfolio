@@ -1,14 +1,10 @@
 import webpack from 'webpack';
-import { BuildOptions } from './types/config';
 import { buildCssLoader } from './loaders/buildCssLoader';
-import { buildBabelLoader } from './loaders/buildBabelLoader';
+import { BuildOptions } from './types/config';
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 	const { isDev } = options;
 
-	const babelLoader = buildBabelLoader(options);
-
-	// Если не используем тайпскрипт - нужен babel-loader
 	const typescriptLoader = {
 		test: /\.tsx?$/,
 		use: 'ts-loader',
@@ -24,7 +20,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
 	const fileLoader =
 		{
-			test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+			test: /\.(png|jpe?g|gif|woff2|otf|ttf|woff)$/i,
 			use: [
 				{
 					loader: 'file-loader',
@@ -33,10 +29,9 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 		};
 
 	return [
-		babelLoader,
+		fileLoader,
+		svgLoader,
 		typescriptLoader,
 		cssLoader,
-		svgLoader,
-		fileLoader,
 	];
 }

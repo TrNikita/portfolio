@@ -1,10 +1,7 @@
 import React, { memo } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Navbar.module.scss';
 import { useTranslation } from 'react-i18next';
-import { Text, TextTheme } from 'shared/ui/Text/Text';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
 	className?: string;
@@ -15,18 +12,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 
 	return (
 		<header className={classNames(cls.Navbar, {}, [className])}>
-			<Text
-				className={cls.appName}
-				title={t('Название сайта')}
-				theme={TextTheme.INVERTED}
-			/>
-			<AppLink
-				to={RoutePath.main}
-				theme={AppLinkTheme.SECONDARY}
-				className={cls.createBtn}
-			>
-				{t('Main')}
-			</AppLink>
+			{t('Главная')}
 		</header>
 	);
 });

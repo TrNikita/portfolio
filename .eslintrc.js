@@ -10,6 +10,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:i18next/recommended',
 		'plugin:jsx-a11y/recommended',
+		'plugin:import/recommended',
 	],
 	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
@@ -22,7 +23,7 @@ module.exports = {
 		'i18next',
 		'jsx-a11y',
 		'react-hooks',
-		'trn-plugin'
+		'trn-plugin',
 	],
 	'rules': {
 		'indent': [
@@ -73,7 +74,8 @@ module.exports = {
 					'direction',
 					'gap',
 					'role',
-					'as'
+					'as',
+					'border',
 				],
 			},
 		],
@@ -84,21 +86,44 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'error',
 		'react/display-name': 'off',
 		'jsx-a11y/no-autofocus': 'off',
-		'react/no-array-index-key':'off',
-		'trn-plugin/path-checker': 'error'
+		'react/no-array-index-key': 'off',
+		'trn-plugin/path-checker': 'error',
+		'no-multiple-empty-lines': ['error', { 'max': 2, 'maxBOF': 0, 'maxEOF': 0 }],
+		'import/order': [
+			'error',
+			{
+				'newlines-between': 'never',
+				'groups': [
+					'builtin',
+					'external',
+					'internal',
+					'sibling',
+					'parent',
+					'index',
+				],
+				'pathGroups': [
+					{
+						'pattern': '@/**',
+						'group': 'internal',
+					},
+				],
+				'alphabetize': {
+					'order': 'asc',
+					'caseInsensitive': true,
+				},
+			},
+		],
+		'import/newline-after-import': [
+			'error',
+			{ 'count': 1 },
+		],
+		'import/no-unresolved': 'off',
+		'import/named': 'off',
+		'import/default': 'off',
 	},
 	globals: {
 		'__IS_DEV__': true,
 		'__API__': true,
-		'__PROJECT__': true
+		'__PROJECT__': true,
 	},
-	overrides: [
-		{
-			files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
-			rules: {
-				'i18next/no-literal-string': 'off',
-				'max-len': 'off',
-			},
-		},
-	],
 };

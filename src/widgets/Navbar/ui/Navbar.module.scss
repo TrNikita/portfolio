@@ -1,16 +1,18 @@
 .Navbar {
+    position: fixed;
+
     display: flex;
     align-items: center;
 
     width: 100%;
     height: var(--navbar-height);
-    padding: 20px;
+    padding: 10px;
 
     background: var(--inverted-bg-color);
 }
 
 .links,
-.dropdown {
+.actions {
     margin-left: auto;
 }
 
