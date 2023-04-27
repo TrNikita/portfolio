@@ -1,0 +1,1 @@
+export { ScrollToLink } from './ScrollToLink';

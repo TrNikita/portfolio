@@ -1,0 +1,27 @@
+.SkillsBlock {
+    width: 100%;
+    height: calc(100% - var(--navbar-height));
+    padding: 0 5vw;
+    border: red solid 2px;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 1.7rem;
+    column-gap: 2.8rem;
+    justify-content: space-around;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font: var(--font-xl);
+}
+
+@media screen and (max-width: 841px) {
+    .SkillsBlock {
+        height: 100%;
+    }
+}

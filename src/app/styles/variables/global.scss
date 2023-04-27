@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 :root {
-    --font-family-main: "Amatic SC", "Courier New", serif;
+    --font-family-main: "Ubuntu", "Courier New", serif;
 
     // s
     --font-size-s: 12px;
@@ -24,7 +24,7 @@
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
     // Размеры
-    --navbar-height: 10vh;
+    --navbar-height: 7vh;
     --sidebar-width: 300px;
     --sidebar-width-collapsed: 80px;
 

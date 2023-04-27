@@ -1,26 +1,38 @@
 .Navbar {
-    position: fixed;
+    position: sticky;
+    top: 0;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     width: 100%;
     height: var(--navbar-height);
-    padding: 10px;
+    padding: 10px 10vw;
 
     background: var(--inverted-bg-color);
 }
 
-.links,
-.actions {
-    margin-left: auto;
+.switchers {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 50px;
+
+    border: red solid 1px;
 }
 
-.mainLink {
-    margin-right: 15px;
-}
+.lang {
+    cursor: pointer;
+    padding: 4px;
+    border: #31c931 solid 1px;
+    border-radius: 10px;
 
-.appName {
-    width: var(--sidebar-width);
-    margin-left: 15px;
+    &:hover {
+        opacity: 0.8;
+        fill-opacity: 0.8;
+        stroke-opacity: 0.8;
+    }
 }

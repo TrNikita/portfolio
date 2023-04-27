@@ -1,12 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-scroll';
+import info from '@/shared/info';
+import { About } from '@/widgets/About';
 import { Navbar } from '@/widgets/Navbar';
-
+import { ProjectsBlock } from '@/widgets/ProjectsBlock';
+import { SkillsBlock } from '@/widgets/SkillsBlock';
 
 export const MainPage = () => {
-	const { t } = useTranslation('main');
+	const { t } = useTranslation();
 
+	console.log('info', info);
 	const text = 'Whereas disregard and contempt for human rights have resulted\n';
 
 	const style = {
@@ -21,46 +24,16 @@ export const MainPage = () => {
 	return (
 		<div>
 			<Navbar/>
-			{/*<About/>*/}
 			{/*<Projects/>*/}
 			{/*<Skills/>*/}
 			{/*<Contacts/>*/}
 			{/*<Courses/>*/}
 			{/*<CV/>*/}
-
-			<Link
-				activeClass='active'
-				to='test1'
-				hashSpy={true}
-				smooth={true}
-				duration={500}
-			>
-				Test 1
-			</Link>
-			<Link
-				activeClass='active'
-				className='test2'
-				to='test2'
-				spy={true}
-				smooth={true}
-				duration={500}
-			>
-				Test 2
-			</Link>
-			<Link
-				activeClass='active'
-				className='test3'
-				to='test3'
-				spy={true}
-				smooth={true}
-				duration={500}
-			>
-				Test 3
-			</Link>
-
-			<div style={style} id='test1'>{text}</div>
-			<div style={style} id='test2'>{text}</div>
-			<div style={style} id='test3'>{text}</div>
+			<About id={'about'}>
+				{text}
+			</About>
+			<SkillsBlock {...info.skills}/>
+			<ProjectsBlock {...info.projects}/>
 		</div>
 	);
 };
