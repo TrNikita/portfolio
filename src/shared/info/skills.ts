@@ -11,123 +11,123 @@ export const skills = {
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '3',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '4',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '5',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '6',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '7',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '8',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '9',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '10',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '11',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '12',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '13',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '14',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '15',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '16',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '17',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '18',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '19',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '20',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '21',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '22',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '23',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '24',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '25',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '26',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '27',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '28',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '29',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '30',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '31',
 			title: 'TypeScript',
 		},
 		{
-			id: '2',
+			id: '32',
 			title: 'TypeScript',
 		}
 	]

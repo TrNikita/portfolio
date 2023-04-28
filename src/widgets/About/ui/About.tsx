@@ -17,7 +17,6 @@ export const About = memo((props: AboutProps) => {
 
 	return (
 		<div
-			id={contacts.id}
 			className={classNames(cls.About, {}, [className])}
 		>
 			{children}
