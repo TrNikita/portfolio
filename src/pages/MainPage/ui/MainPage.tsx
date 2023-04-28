@@ -11,22 +11,13 @@ import { SkillsBlock } from '@/widgets/SkillsBlock';
 export const MainPage = () => {
 	const { t } = useTranslation();
 
-	console.log('info', info);
-	const text = 'Whereas disregard and contempt for human rights have resulted\n';
-
 	return (
 		<div>
 			<Navbar/>
-			{/*<Projects/>*/}
-			{/*<Skills/>*/}
-			{/*<Contacts/>*/}
-			{/*<Courses/>*/}
 			{/*<CV/>*/}
-			<About id={'about'}>
-				{text}
-			</About>
-			<SkillsBlock {...info.skills}/>
+			<About/>
 			<ProjectsBlock {...info.projects}/>
+			<SkillsBlock {...info.skills}/>
 			<CoursesBlock {...info.courses}/>
 			<ContactsBlock {...info.contacts}/>
 		</div>

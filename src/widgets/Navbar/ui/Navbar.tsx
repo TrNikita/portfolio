@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
@@ -32,7 +32,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 
 			<div className={cls.switchers}>
 				<LangSwitcher className={cls.lang}/>
-				<ThemeSwitcher/>
+				<ThemeSwitcher className={cls.theme}/>
 			</div>
 		</header>
 	);

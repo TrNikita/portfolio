@@ -17,9 +17,8 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    justify-content: space-around;
-
-    padding: 0 50px;
+    justify-content: center;
+    justify-items: center;
 
     border: red solid 1px;
 }
@@ -35,4 +34,10 @@
         fill-opacity: 0.8;
         stroke-opacity: 0.8;
     }
+}
+
+.theme {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
