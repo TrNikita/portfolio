@@ -4,6 +4,12 @@
     height: 0;
 }
 
+.container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 .switchLabel {
     cursor: pointer;
 
@@ -18,9 +24,9 @@
 
     background: grey;
     border-radius: 100px;
-    box-shadow: 4px 4px 8px 0 rgb(34 60 80 / 40%);
+    box-shadow: var(--shadow);
 
-    transition: background-color 0.2s;
+    transition: background-color 0.4s;
 }
 
 .switchLabel .switchButton {
@@ -35,7 +41,7 @@
 
     background: #fff;
     border-radius: 50%;
-    box-shadow: 4px 4px 8px 0 rgb(34 60 80 / 40%);
+    box-shadow: var(--shadow);
 
     transition: 0.2s;
 }

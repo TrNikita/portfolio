@@ -5,13 +5,13 @@ interface SwitcherProps {
 	className?: string;
 	isOn?: boolean;
 	handleToggle: () => void;
+	title?: string;
 }
 
 export const Switcher = (props: SwitcherProps) => {
-	const { isOn = true, handleToggle, className } = props;
-	console.log('className', className);
+	const { isOn = true, handleToggle, className, title } = props;
 	return (
-		<div className={className}>
+		<div className={cls.container}>
 			<input
 				checked={isOn}
 				onChange={handleToggle}
@@ -26,6 +26,7 @@ export const Switcher = (props: SwitcherProps) => {
 			>
 				<span className={cls.switchButton}/>
 			</label>
+			{title}
 		</div>
 	);
 };

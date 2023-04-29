@@ -1,12 +1,12 @@
 .Button {
     cursor: pointer;
 
-    padding: 6px 15px;
+    padding: 6px 10px;
 
     color: var(--primary-color);
 
     border-radius: 10px;
-    box-shadow: 4px 4px 8px 0 rgb(34 60 80 / 30%);
+    box-shadow: var(--shadow);
 
     transition: all 0.1s ease-in-out;
 
