@@ -25,12 +25,11 @@
 
     // Размеры
     --navbar-height: 7vh;
-    --sidebar-width: 300px;
-    --sidebar-width-collapsed: 80px;
+    --switcher-size: 65px;
 
     // z - Индексы
-    --modal-z-index: 1000;
-    --overlay-z-index: 100;
+    --modal-z-index: 10;
+    --overlay-z-index: 1;
 
     // Цвета
     --overlay-color: rgba(0 0 0 / 60%);
