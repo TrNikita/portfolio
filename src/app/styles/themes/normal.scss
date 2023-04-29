@@ -1,21 +1,21 @@
 :root {
-    --bg-color: linear-gradient(120deg, #96fbc4 0%, #f9f586 100%);
-    --inverted-bg-color: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-    --primary-color: #59aba5;
+    --bg-color: linear-gradient(90deg, rgb(255 255 255) 84%, rgb(246 246 246) 100%);
+    --inverted-bg-color: #2d2e28;
+    --primary-color: #2d2e28;
     --secondary-color: #294979;
-    --inverted-primary-color: #31c931;
+    --inverted-primary-color: #ffff;
     --inverted-secondary-color: #04ff04;
 
     // skeleton
     --skeleton-color: #fff;
     --skeleton-shadow: rgba(0 0 0 / 20%);
 
-    // code
-    --code-bg: rgb(255 255 255 / 66%);
-
     // card
-    --card-bg: #dccdcd;
+    --card-bg: rgb(219 204 204 / 30%);
 
-    // listbox
-    --listbox-bg: #dccdcd;
+    // switcher
+    --switcher-bg-color: #ec7e95;
+
+    // Тени
+    --shadow: 4px 4px 8px 0 rgb(34 60 80 / 40%);
 }
