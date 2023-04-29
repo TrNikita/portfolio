@@ -1,32 +1,29 @@
+import Mail from '@/shared/assets/icons/mail.svg';
+
 export const  contacts = {
 	id: 'contacts',
 	title: 'Контакты',
 	data: [
 		{
-			name: 'Telegram',
+			name: 'Telegram / TrN91',
 			link: 'https://t.me/TrN91',
-			icon: '',
-
 		},
 		{
-			name: 'mail',
+			name: 'Mail / tr_nikita@mail.ru',
 			link: 'mailto:tr_nikita@mail.ru',
-			icon: '',
+			icon: Mail,
 		},
 		{
-			name: 'GitHub',
+			name: 'GitHub / TrNikita',
 			link: 'https://github.com/TrNikita',
-			icon: '',
 		},
 		{
-			name: 'Linkedin',
+			name: 'Linkedin / TrNikita',
 			link: 'https://www.linkedin.com/in/trnikita/',
-			icon: '',
 		},
 		{
-			name: 'Habr Career',
+			name: 'Habr Career / TrNikita',
 			link: 'https://career.habr.com/trnikita',
-			icon: '',
 		}
 	]
 };
