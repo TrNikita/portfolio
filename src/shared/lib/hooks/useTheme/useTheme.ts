@@ -12,6 +12,10 @@ interface UseThemeResult {
 export function useTheme(): UseThemeResult {
 	const { theme, setTheme } = useContext(ThemeContext);
 
+	if (theme) {
+		document.body.className = theme;
+	}
+
 	const toggleTheme = () => {
 		let newTheme: Theme;
 		switch (theme) {
