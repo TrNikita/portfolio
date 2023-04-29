@@ -1,7 +1,9 @@
 {
   "Контакты": "Contacts",
-  "Навыки": "Skills",
+  "Навыки": "Skills and Tools",
   "Проекты": "Projects",
   "Язык": "En",
-  "Курсы": "Courses"
+  "Курсы": "Courses",
+  "Свет": "Light",
+  "Тень": "Dark"
 }

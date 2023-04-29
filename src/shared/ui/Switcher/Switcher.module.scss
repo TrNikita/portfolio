@@ -22,11 +22,15 @@
     width: var(--switcher-size);
     height: calc(var(--switcher-size) / 2);
 
-    background: grey;
+    background: #ec7e95;
     border-radius: 100px;
     box-shadow: var(--shadow);
 
     transition: background-color 0.4s;
+}
+
+.isOn {
+    background: #05b689;
 }
 
 .switchLabel .switchButton {

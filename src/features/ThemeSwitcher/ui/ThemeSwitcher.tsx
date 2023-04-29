@@ -13,14 +13,14 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
 	const { theme, toggleTheme } = useTheme();
 	const { t } = useTranslation();
 
-	const themeLight = theme === Theme.LIGHT;
+	const themeDark = theme === Theme.DARK;
 
 	return (
 		<div className={className}>
 			<Switcher
 				handleToggle={toggleTheme}
-				isOn={themeLight}
-				title={themeLight ? t('Свет') : t('Тень')}
+				isOn={themeDark}
+				title={themeDark ? t('Тень') : t('Свет')}
 			/>
 		</div>
 	);

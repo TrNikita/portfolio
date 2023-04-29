@@ -5,17 +5,13 @@ import cls from './Button.module.scss';
 
 export enum ButtonTheme {
 	CLEAR = 'clear',
-	CLEAR_INVERTED = 'clearInverted',
 	OUTLINE = 'outline',
-	OUTLINE_RED = 'outline_red',
 	BACKGROUND = 'background',
-	BACKGROUND_INVERTED = 'backgroundInverted',
 }
 
 export enum ButtonSize {
 	M = 'size_m',
 	L = 'size_l',
-	XL = 'size_xl',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
@@ -24,10 +20,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
 	 * Тема кнопки. Отвечает за визуал (в рамке, без стилей, противоположный теме приложения цвет и тд)
 	 */
 	theme?: ButtonTheme;
-	/**
-	 * Флаг, делающий кнопку квадратной
-	 */
-	square?: boolean;
 	/**
 	 * Размер кнопки в соответствии с дизайн системой
 	 */
@@ -55,17 +47,14 @@ export const Button = memo((props: ButtonProps) => {
 		className,
 		children,
 		theme = ButtonTheme.OUTLINE,
-		square,
 		size = ButtonSize.M,
 		disabled,
 		fullWidth,
-		title,
 		...OtherProps
 	} = props;
 
 	const mods: Mods = {
 		[cls[theme]]: true,
-		[cls.square]: square,
 		[cls[size]]: true,
 		[cls.disabled]: disabled,
 		[cls.fullWidth]: fullWidth

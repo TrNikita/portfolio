@@ -1,3 +1,4 @@
+import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Switcher.module.scss';
 
 
@@ -9,7 +10,11 @@ interface SwitcherProps {
 }
 
 export const Switcher = (props: SwitcherProps) => {
-	const { isOn = true, handleToggle, className, title } = props;
+	const { isOn = false, handleToggle, title } = props;
+	const mods: Mods = {
+		[cls.isOn]: isOn,
+	};
+
 	return (
 		<div className={cls.container}>
 			<input
@@ -20,8 +25,7 @@ export const Switcher = (props: SwitcherProps) => {
 				type='checkbox'
 			/>
 			<label
-				style={{ background: isOn ? '#EF476F' : '#06D6A0' }}
-				className={cls.switchLabel}
+				className={classNames(cls.switchLabel, mods)}
 				htmlFor='switch'
 			>
 				<span className={cls.switchButton}/>

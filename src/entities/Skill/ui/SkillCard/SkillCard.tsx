@@ -19,9 +19,11 @@ export const SkillCard = memo((props: SkillCardProps) => {
 	return (
 		<div className={classNames(cls.SkillCard, {}, [className])}>
 			<Card>
-				{skill?.title}
+				<div className={cls.title}>
+					{skill?.title}
+				</div>
 				{skill.icon ? (
-					<Icon Svg={skill?.icon}/>
+					<Icon className={cls.icon} Svg={skill?.icon}/>
 				) : null}
 			</Card>
 		</div>

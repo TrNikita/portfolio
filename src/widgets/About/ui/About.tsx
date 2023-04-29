@@ -16,7 +16,8 @@ export const About = memo((props: AboutProps) => {
 			className={classNames(cls.About, {}, [className])}
 		>
 			<div>
-				Hello!
+				Hi 👋, I'm Nikita Trokhov
+				Frontend Developer
 			</div>
 		</div>
 	);

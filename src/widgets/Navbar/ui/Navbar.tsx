@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
@@ -19,7 +19,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 			id='navbar'
 			className={classNames(cls.Navbar, {}, [className])}
 		>
-			<div>
+			<div className={cls.navItems}>
 				{Object.values(info).map(block => (
 					<ScrollToLink
 						key={block.id}
@@ -31,8 +31,8 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 			</div>
 
 			<div className={cls.switchers}>
-				<LangSwitcher className={cls.lang}/>
 				<ThemeSwitcher className={cls.theme}/>
+				<LangSwitcher className={cls.lang}/>
 			</div>
 		</header>
 	);

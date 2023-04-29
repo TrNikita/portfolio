@@ -1,16 +1,13 @@
 .SkillsBlock {
     width: 100%;
-    height: calc(100vh - var(--navbar-height));
+    min-height: calc(100vh - var(--navbar-height));
     padding: 2vh 5vw;
-    border: red solid 2px;
 }
 
 .skills {
     display: flex;
     flex-flow: row wrap;
-    row-gap: 1.7rem;
-    column-gap: 2.8rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .title {

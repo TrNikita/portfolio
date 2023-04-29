@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import React from 'react';
 
 export interface Contact {
 	name: string;
 	link: string;
-	icon?: ReactNode;
+	icon?: React.VFC<React.SVGProps<SVGSVGElement>>;
 }

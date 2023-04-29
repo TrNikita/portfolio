@@ -12,8 +12,8 @@ export const MainPage = () => {
 		<>
 			<Navbar/>
 			<About/>
-			<ProjectsBlock {...info.projects}/>
 			<SkillsBlock {...info.skills}/>
+			<ProjectsBlock {...info.projects}/>
 			<CoursesBlock {...info.courses}/>
 			<ContactsBlock {...info.contacts}/>
 		</>
