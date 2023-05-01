@@ -11,9 +11,6 @@ interface SwitcherProps {
 
 export const Switcher = (props: SwitcherProps) => {
 	const { isOn = false, handleToggle, title } = props;
-	const mods: Mods = {
-		[cls.isOn]: isOn,
-	};
 
 	return (
 		<div className={cls.container}>
@@ -25,7 +22,7 @@ export const Switcher = (props: SwitcherProps) => {
 				type='checkbox'
 			/>
 			<label
-				className={classNames(cls.switchLabel, mods)}
+				className={classNames(cls.switchLabel)}
 				htmlFor='switch'
 			>
 				<span className={cls.switchButton}/>

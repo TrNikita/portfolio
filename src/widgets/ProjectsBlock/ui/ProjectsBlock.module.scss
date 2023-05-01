@@ -1,6 +1,8 @@
 .ProjectsBlock {
-    width: 100%;
-    height: calc(100vh - var(--navbar-height));
-    padding: 0 5vw;
+    min-height: 100vh;
+    padding-top: var(--navbar-height);
+    padding-right: 5vw;
+    padding-left: 5vw;
+
     border: red solid 2px;
 }

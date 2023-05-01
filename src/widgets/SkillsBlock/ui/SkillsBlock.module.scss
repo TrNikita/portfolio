@@ -1,7 +1,11 @@
 .SkillsBlock {
     width: 100%;
-    min-height: calc(100vh - var(--navbar-height));
-    padding: 2vh 5vw;
+    min-height: 100vh;
+    padding-top: var(--navbar-height);
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+    border: red solid 1px;
 }
 
 .skills {

@@ -44,7 +44,7 @@ export const ScrollToLink = memo((props: ScrollToLinkProps) => {
 				hashSpy
 				smooth
 				duration={500}
-				offset={-navbarHeight}
+				// offset={-navbarHeight}
 
 				className={
 					classNames(
