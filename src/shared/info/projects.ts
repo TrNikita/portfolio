@@ -18,5 +18,13 @@ export const projects = {
 			gitLink: '',
 			img: '',
 		},
+		{
+			id: '3',
+			title: 'Online blogs [In work]',
+			description: 'Онлайн блоги',
+			mainLink: '',
+			gitLink: '',
+			img: '',
+		},
 	]
 };
