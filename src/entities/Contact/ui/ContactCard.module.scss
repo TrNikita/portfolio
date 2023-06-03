@@ -1,7 +1,32 @@
 .ContactCard {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+
+    a {
+        position: relative;
+        line-height: 2;
+    }
+
+    a::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+
+        display: block;
+
+        width: 0;
+        height: 2px;
+
+        background-color: var(--icon-color);
+
+        transition: width 0.3s ease-out;
+    }
+
+    a:hover::after,
+    a:focus::after {
+        width: 100%;
+    }
 }
 
 .icon {

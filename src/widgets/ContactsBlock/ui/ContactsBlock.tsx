@@ -16,15 +16,11 @@ export const ContactsBlock = memo((props: ContactsBlockProps) => {
 	const { className, title, id, data } = props;
 
 	return (
-		<div
-			id={id}
-			className={classNames(cls.ContactsBlock, {}, [className])}
-		>
+		<div id={id} className={classNames(cls.ContactsBlock, {}, [className])}>
 			{title ? t(title) : null}
-			{data.map(contact => (
-				<ContactCard contact={contact} key={contact.name}/>
+			{data.map((contact) => (
+				<ContactCard contact={contact} key={contact.name} />
 			))}
-
 		</div>
 	);
 });
