@@ -1,5 +1,5 @@
 import React from 'react';
-import info from '@/shared/info';
+import data from '@/shared/data';
 import { About } from '@/widgets/About';
 import { ContactsBlock } from '@/widgets/ContactsBlock';
 import { CoursesBlock } from '@/widgets/CoursesBlock';
@@ -10,12 +10,12 @@ import { SkillsBlock } from '@/widgets/SkillsBlock';
 export const MainPage = () => {
 	return (
 		<>
-			<Navbar/>
-			<About/>
-			<SkillsBlock {...info.skills}/>
-			<ProjectsBlock {...info.projects}/>
-			<CoursesBlock {...info.courses}/>
-			<ContactsBlock {...info.contacts}/>
+			<Navbar />
+			<About />
+			<SkillsBlock {...data.skills} />
+			<ProjectsBlock {...data.projects} />
+			<CoursesBlock {...data.courses} />
+			<ContactsBlock {...data.contacts} />
 		</>
 	);
 };

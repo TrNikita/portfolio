@@ -1,7 +1,6 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Switcher.module.scss';
 
-
 interface SwitcherProps {
 	className?: string;
 	isOn?: boolean;
@@ -18,14 +17,11 @@ export const Switcher = (props: SwitcherProps) => {
 				checked={isOn}
 				onChange={handleToggle}
 				className={cls.switchCheckbox}
-				id='switch'
-				type='checkbox'
+				id="switch"
+				type="checkbox"
 			/>
-			<label
-				className={classNames(cls.switchLabel)}
-				htmlFor='switch'
-			>
-				<span className={cls.switchButton}/>
+			<label className={classNames(cls.switchLabel)} htmlFor="switch">
+				<span className={cls.switchButton} />
 			</label>
 			{title}
 		</div>

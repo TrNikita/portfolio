@@ -6,7 +6,7 @@ import { Project } from '../model/types/project';
 
 interface ProjectCardProps {
 	className?: string;
-	project: Project
+	project: Project;
 }
 
 export const ProjectCard = memo((props: ProjectCardProps) => {

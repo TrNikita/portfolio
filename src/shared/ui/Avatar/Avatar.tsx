@@ -2,7 +2,6 @@ import { CSSProperties, useMemo } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Avatar.module.scss';
 
-
 interface AvatarProps {
 	className?: string;
 	src?: string;
@@ -11,12 +10,7 @@ interface AvatarProps {
 }
 
 export const Avatar = (props: AvatarProps) => {
-	const {
-		className,
-		src,
-		size,
-		alt
-	} = props;
+	const { className, src, size, alt } = props;
 
 	const mods: Mods = {};
 
@@ -28,13 +22,11 @@ export const Avatar = (props: AvatarProps) => {
 	}, [size]);
 
 	return (
-		<img src={src} className={classNames(
-			cls.Avatar,
-			{},
-			[className]
-		)}
-			 style={styles}
-			 alt={alt}
+		<img
+			src={src}
+			className={classNames(cls.Avatar, {}, [className])}
+			style={styles}
+			alt={alt}
 		/>
 	);
 };

@@ -15,6 +15,32 @@
 
 .navItems {
     margin-right: 16px;
+
+    a {
+        position: relative;
+        line-height: 1;
+    }
+
+    a::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+
+        display: block;
+
+        width: 0;
+        height: 2px;
+
+        background-color: var(--switcher-bg-color);
+
+        transition: width 0.3s ease-out;
+    }
+
+    a:hover::after,
+    a:focus::after {
+        width: 100%;
+    }
 }
 
 .switchers {

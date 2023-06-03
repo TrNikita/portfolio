@@ -3,7 +3,6 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { useInfiniteScroll } from '@/shared/lib/hooks/useInfiniteScroll/useInfiniteScroll';
 import cls from './Page.module.scss';
 
-
 interface PageProps {
 	className?: string;
 	children: ReactNode;
@@ -30,9 +29,9 @@ export const Page = memo((props: PageProps) => {
 			id={PAGE_ID}
 		>
 			{children}
-			{onScrollEnd
-				? <div className={cls.trigger} ref={triggerRef}/>
-				: null}
+			{onScrollEnd ? (
+				<div className={cls.trigger} ref={triggerRef} />
+			) : null}
 		</main>
 	);
 });

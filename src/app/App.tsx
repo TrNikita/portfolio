@@ -3,8 +3,8 @@ import { AppRouter } from './providers/router';
 
 const App = () => {
 	return (
-		<div className='app'>
-			<AppRouter/>
+		<div className="app">
+			<AppRouter />
 		</div>
 	);
 };

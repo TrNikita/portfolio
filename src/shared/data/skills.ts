@@ -35,7 +35,7 @@ export const skills = {
 		{
 			id: '8',
 			title: 'HTML5',
-			icon: Html
+			icon: Html,
 		},
 		{
 			id: '2',
@@ -45,27 +45,27 @@ export const skills = {
 		{
 			id: '9',
 			title: 'Javascript',
-			icon: Javascript
+			icon: Javascript,
 		},
 		{
 			id: '17',
 			title: 'TypeScript',
-			icon: Typescript
+			icon: Typescript,
 		},
 		{
 			id: '11',
 			title: 'NodeJS',
-			icon: NodeJS
+			icon: NodeJS,
 		},
 		{
 			id: '13',
 			title: 'React',
-			icon: React
+			icon: React,
 		},
 		{
 			id: '14',
 			title: 'Redux',
-			icon: Redux
+			icon: Redux,
 		},
 		{
 			id: '18',
@@ -75,22 +75,22 @@ export const skills = {
 		{
 			id: '25',
 			title: 'Vite',
-			icon: Vite
+			icon: Vite,
 		},
 		{
 			id: '7',
 			title: 'Git',
-			icon: Git
+			icon: Git,
 		},
 		{
 			id: '20',
 			title: 'Jest',
-			icon: Jest
+			icon: Jest,
 		},
 		{
 			id: '21',
 			title: 'i18next',
-			icon: i18next
+			icon: i18next,
 		},
 		{
 			id: '22',
@@ -100,82 +100,82 @@ export const skills = {
 		{
 			id: '23',
 			title: 'ESLint',
-			icon: ESLint
+			icon: ESLint,
 		},
 		{
 			id: '24',
 			title: 'Storybook',
-			icon: Storybook
+			icon: Storybook,
 		},
 		{
 			id: '26',
 			title: 'Virtuoso',
-			icon: Virtuoso
+			icon: Virtuoso,
 		},
 		{
 			id: '27',
 			title: 'Npm',
-			icon: Npm
+			icon: Npm,
 		},
 		{
 			id: '28',
 			title: 'Cypress',
-			icon: Cypress
+			icon: Cypress,
 		},
 		{
 			id: '15',
 			title: 'SASS',
-			icon: SASS
+			icon: SASS,
 		},
 		{
 			id: '1',
 			title: 'Bootstrap',
-			icon: Bootstrap
+			icon: Bootstrap,
 		},
 		{
 			id: '16',
 			title: 'Tailwindcss',
-			icon: Tailwindcss
+			icon: Tailwindcss,
 		},
 		{
 			id: '5',
 			title: 'Figma',
-			icon: Figma
+			icon: Figma,
 		},
 		{
 			id: '12',
 			title: 'Photoshop',
-			icon: Photoshop
+			icon: Photoshop,
 		},
 		{
 			id: '3',
 			title: 'Docker',
-			icon: Docker
+			icon: Docker,
 		},
 		{
 			id: '4',
 			title: 'Express',
-			icon: Express
+			icon: Express,
 		},
 		{
 			id: '10',
 			title: 'MongoDB',
-			icon: MongoDB
+			icon: MongoDB,
 		},
 		{
 			id: '6',
 			title: 'Firebase',
-			icon: Firebase
+			icon: Firebase,
 		},
 		{
 			id: '19',
 			title: 'Postman',
-			icon: Postman
+			icon: Postman,
 		},
 		{
 			id: '29',
 			title: 'Nginx',
-			icon: Nginx
+			icon: Nginx,
 		},
-	]
+	],
 };

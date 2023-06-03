@@ -4,7 +4,6 @@ import { Theme } from '@/shared/const/theme';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 import { Switcher } from '@/shared/ui/Switcher';
 
-
 interface ThemeSwitcherProps {
 	className?: string;
 }

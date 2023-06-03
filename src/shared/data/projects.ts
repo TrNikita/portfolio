@@ -26,5 +26,5 @@ export const projects = {
 			gitLink: '',
 			img: '',
 		},
-	]
+	],
 };

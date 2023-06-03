@@ -12,12 +12,14 @@ export const About = memo((props: AboutProps) => {
 	const { className } = props;
 
 	return (
-		<div
-			className={classNames(cls.About, {}, [className])}
-		>
+		<div className={classNames(cls.About, {}, [className])}>
 			<div>
-				Hi 👋, I'm Nikita Trokhov
-				Frontend Developer
+				{/*
+				чем ты можешь быть реально полезен для бизнеса
+
+				разрабатывать надежные стабильные масштабируемые проекты
+				*/}
+				Hi 👋, I'm Nikita Trokhov Frontend Developer
 			</div>
 		</div>
 	);

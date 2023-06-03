@@ -3,25 +3,13 @@ import { Link, LinkProps } from 'react-scroll';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './ScrollToLink.module.scss';
 
-export enum ScrollToLinkTheme {
-	PRIMARY = 'primary',
-	SECONDARY = 'secondary',
-	RED = 'red',
-}
-
 interface ScrollToLinkProps extends LinkProps {
 	className?: string;
-	theme?: ScrollToLinkTheme;
 	children?: ReactNode;
 }
 
 export const ScrollToLink = memo((props: ScrollToLinkProps) => {
-	const {
-		to,
-		className,
-		theme = ScrollToLinkTheme.PRIMARY,
-		children,
-	} = props;
+	const { to, className, children } = props;
 
 	const [navbarHeight, setNavbarHeight] = useState(0);
 
@@ -45,13 +33,7 @@ export const ScrollToLink = memo((props: ScrollToLinkProps) => {
 				smooth
 				duration={500}
 				// offset={-navbarHeight}
-
-				className={
-					classNames(
-						cls.ScrollToLink,
-						mods,
-						[className, cls[theme]])
-				}
+				className={classNames(cls.ScrollToLink, {}, [className])}
 			>
 				{children}
 			</Link>

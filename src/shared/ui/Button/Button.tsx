@@ -2,7 +2,6 @@ import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
-
 export enum ButtonTheme {
 	CLEAR = 'clear',
 	OUTLINE = 'outline',
@@ -14,7 +13,7 @@ export enum ButtonSize {
 	L = 'size_l',
 }
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	className?: string;
 	/**
 	 * Тема кнопки. Отвечает за визуал (в рамке, без стилей, противоположный теме приложения цвет и тд)
@@ -57,18 +56,13 @@ export const Button = memo((props: ButtonProps) => {
 		[cls[theme]]: true,
 		[cls[size]]: true,
 		[cls.disabled]: disabled,
-		[cls.fullWidth]: fullWidth
+		[cls.fullWidth]: fullWidth,
 	};
 
 	return (
 		<button
-			type='button'
-			className=
-				{classNames(
-					cls.Button,
-					mods,
-					[className]
-				)}
+			type="button"
+			className={classNames(cls.Button, mods, [className])}
 			disabled={disabled}
 			{...OtherProps}
 		>

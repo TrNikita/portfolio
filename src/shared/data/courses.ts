@@ -4,10 +4,9 @@ export const courses = {
 	data: [
 		{
 			id: '1',
-			school:'Ulbi TV',
+			school: 'Ulbi TV',
 			title: 'Advanced Frontend',
 			link: 'https://www.youtube.com/c/ulbitv',
-
 		},
 		{
 			id: '2',
@@ -21,5 +20,5 @@ export const courses = {
 			title: 'HTML & CSS',
 			link: 'https://result.school/',
 		},
-	]
+	],
 };

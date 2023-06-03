@@ -6,7 +6,6 @@ import { Icon } from '@/shared/ui/Icon/Icon';
 import cls from './SkillCard.module.scss';
 import { Skill } from '../../model/types/skill';
 
-
 interface SkillCardProps {
 	skill: Skill;
 	className?: string;
@@ -19,11 +18,9 @@ export const SkillCard = memo((props: SkillCardProps) => {
 	return (
 		<div className={classNames(cls.SkillCard, {}, [className])}>
 			<Card>
-				<div className={cls.title}>
-					{skill?.title}
-				</div>
+				<div className={cls.title}>{skill?.title}</div>
 				{skill.icon ? (
-					<Icon className={cls.icon} Svg={skill?.icon}/>
+					<Icon className={cls.icon} Svg={skill?.icon} />
 				) : null}
 			</Card>
 		</div>

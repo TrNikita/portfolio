@@ -16,17 +16,12 @@ export const SkillsBlock = memo((props: SkillsBlockProps) => {
 	const { className, data, id, title } = props;
 
 	return (
-		<div
-			id={id}
-			className={classNames(cls.SkillsBlock, {}, [className])}
-		>
-			<div className={cls.title}>
-				{title ? t(title) : null}
-			</div>
+		<div id={id} className={classNames(cls.SkillsBlock, {}, [className])}>
+			<div className={cls.title}>{title ? t(title) : null}</div>
 
 			<div className={cls.skills}>
-				{data.map(skill => (
-					<SkillCard skill={skill} key={skill.id}/>
+				{data.map((skill) => (
+					<SkillCard skill={skill} key={skill.id} />
 				))}
 			</div>
 		</div>

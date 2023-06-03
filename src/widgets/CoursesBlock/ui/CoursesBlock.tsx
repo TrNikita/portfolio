@@ -16,16 +16,11 @@ export const CoursesBlock = memo((props: CoursesBlockProps) => {
 	const { className, id, title, data } = props;
 
 	return (
-		<div
-			id={id}
-			className={classNames(cls.CoursesBlock, {}, [className])}
-		>
+		<div id={id} className={classNames(cls.CoursesBlock, {}, [className])}>
 			{title ? t(title) : null}
-			{data.map(course => (
-				<CourseCard course={course} key={course.id}/>
+			{data.map((course) => (
+				<CourseCard course={course} key={course.id} />
 			))}
 		</div>
-
-
 	);
 });

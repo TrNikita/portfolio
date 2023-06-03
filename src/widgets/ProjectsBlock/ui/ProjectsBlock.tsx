@@ -18,13 +18,10 @@ export const ProjectsBlock = memo((props: ProjectsBlockProps) => {
 	console.log('data', data);
 
 	return (
-		<div
-			id={id}
-			className={classNames(cls.ProjectsBlock, {}, [className])}
-		>
+		<div id={id} className={classNames(cls.ProjectsBlock, {}, [className])}>
 			{title ? t(title) : null}
-			{data.map(project=> (
-				<ProjectCard project={project} key={project.id}/>
+			{data.map((project) => (
+				<ProjectCard project={project} key={project.id} />
 			))}
 		</div>
 	);
