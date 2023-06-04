@@ -4,4 +4,6 @@ export interface Course {
 	title: string;
 	link?: string;
 	img?: string;
+	duration?: string;
+	skills?: string[];
 }
