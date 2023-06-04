@@ -1,7 +1,5 @@
 import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { AppLink } from '@/shared/ui/AppLink/AppLink';
 import { Icon } from '@/shared/ui/Icon/Icon';
 import cls from './ContactCard.module.scss';
 import { Contact } from '../model/types/types';
@@ -12,7 +10,6 @@ interface ContactCardProps {
 }
 
 export const ContactCard = memo((props: ContactCardProps) => {
-	const { t } = useTranslation();
 	const { className, contact } = props;
 
 	return (
@@ -24,10 +21,12 @@ export const ContactCard = memo((props: ContactCardProps) => {
 				rel="noreferrer"
 				className={cls.link}
 			>
-				{contact.icon ? (
-					<Icon Svg={contact?.icon} className={cls.icon} />
-				) : null}
-				{contact.name}
+				<div className={cls.linkContent}>
+					{contact.icon ? (
+						<Icon Svg={contact?.icon} className={cls.icon} />
+					) : null}
+					{contact.name}
+				</div>
 			</a>
 		</div>
 	);
