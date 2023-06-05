@@ -4,6 +4,22 @@ export const courses = {
 	data: [
 		{
 			id: '1',
+			school: 'Result School - Vladilen Minin',
+			title: 'HTML & CSS',
+			link: 'https://result.school/',
+			duration: '2 месяца (март 2022 - апрель 2022)',
+			skills: ['Изучение HTML', 'Изучение CSS'],
+		},
+		{
+			id: '2',
+			school: 'Result School - Vladilen Minin',
+			title: 'Профессия Frontend-разработчик',
+			link: 'https://result.school/',
+			duration: '8 месяцев (май 2022 - декабрь 2022)',
+			skills: ['Настройка JavaScript'],
+		},
+		{
+			id: '3',
 			school: 'Ulbi TV',
 			title: 'Продвинутый Frontend',
 			link: 'https://ulbitv.ru/frontend',
@@ -35,26 +51,6 @@ export const courses = {
 				'Настройка nginx',
 				'Trunk based подход',
 			],
-		},
-		{
-			id: '2',
-			school: 'Result School - Vladilen Minin',
-			title: 'Профессия Frontend-разработчик',
-			link: 'https://result.school/',
-			duration: '8 месяцев (май 2022 - декабрь 2022)',
-			skills: [
-				'Настройка JavaScript']
-		},
-		{
-			id: '3',
-			school: 'Result School - Vladilen Minin',
-			title: 'HTML & CSS',
-			link: 'https://result.school/',
-			duration: '2 месяца (март 2022 - апрель 2022)',
-			skills: [
-				'Изучение HTML',
-				'Изучение CSS',
-			]
 		},
 	],
 };

@@ -5,5 +5,5 @@ export interface Course {
 	link?: string;
 	img?: string;
 	duration?: string;
-	skills?: string[];
+	skills: string[];
 }
