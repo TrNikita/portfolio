@@ -4,15 +4,17 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './About.module.scss';
 
 interface AboutProps {
+	id: string;
 	className?: string;
+	title?: string;
 }
 
 export const About = memo((props: AboutProps) => {
 	const { t } = useTranslation();
-	const { className } = props;
+	const { className, id } = props;
 
 	return (
-		<div className={classNames(cls.About, {}, [className])}>
+		<div id={id} className={classNames(cls.About, {}, [className])}>
 			<div>
 				{/*
 				чем ты можешь быть реально полезен для бизнеса

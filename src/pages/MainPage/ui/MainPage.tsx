@@ -11,7 +11,7 @@ export const MainPage = () => {
 	return (
 		<>
 			<Navbar />
-			<About />
+			<About {...data.about} />
 			<SkillsBlock {...data.skills} />
 			<ProjectsBlock {...data.projects} />
 			<CoursesBlock {...data.courses} />
