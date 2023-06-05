@@ -2,16 +2,13 @@
     width: 100%;
     min-height: 100vh;
     padding-top: var(--navbar-height);
-    padding-right: 5vw;
-    padding-left: 5vw;
-
-    border: red solid 1px;
 }
 
 .skills {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    padding: 0 10vh;
 }
 
 .title {
