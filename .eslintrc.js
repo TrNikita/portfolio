@@ -76,6 +76,7 @@ module.exports = {
 					'role',
 					'as',
 					'border',
+					'alt'
 				],
 			},
 		],
