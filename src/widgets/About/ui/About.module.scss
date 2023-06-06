@@ -1,6 +1,30 @@
 .About {
-    min-height: 100vh;
-    padding-top: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: calc(100vh - var(--navbar-height));
     padding-right: 5vw;
     padding-left: 5vw;
+}
+
+.textBlock {
+    display: flex;
+    min-width: 30%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.imageBlock {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 841px) {
+    .About {
+        flex: none;
+        align-self: flex-start;
+        max-width: none;
+    }
 }
