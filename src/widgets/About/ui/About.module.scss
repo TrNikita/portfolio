@@ -1,6 +1,6 @@
 .About {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     align-items: center;
 
     max-width: 1200px;
@@ -11,13 +11,11 @@
 }
 
 .textBlock {
-    padding: 10px;
-    border: 1px solid red;
+    padding: 15px;
 }
 
 .imageBlock {
     justify-content: center;
-    border: 1px solid red;
 }
 
 @media screen and (max-width: 841px) {
