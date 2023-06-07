@@ -1,9 +1,12 @@
 {
-	"Контакты": "Contacts",
-	"Навыки": "Skills and Tools",
-	"Проекты": "Projects",
-	"Язык": "En",
-	"Курсы": "Courses",
-	"Свет": "Light",
-	"Тень": "Dark"
+  "Обо мне": "About",
+  "Контакты": "Contacts",
+  "Навыки": "Skills and Tools",
+  "Проекты": "Projects",
+  "Язык": "En",
+  "Курсы": "Courses",
+  "Свет": "Light",
+  "Тень": "Dark",
+  "aboutTitle": "Hi \uD83D\uDC4B I'm Nikita Trokhov Frontend Developer",
+  "aboutText": "About 1.5 years I'm passionate about web development. Free time I like to spend with my family"
 }
