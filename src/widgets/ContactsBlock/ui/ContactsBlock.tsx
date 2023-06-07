@@ -17,7 +17,7 @@ export const ContactsBlock = memo((props: ContactsBlockProps) => {
 
 	return (
 		<div id={id} className={classNames(cls.ContactsBlock, {}, [className])}>
-			{title ? t(title) : null}
+			{title ? <div className={cls.title}>{t(title)}</div> : null}
 			{data.map((contact) => (
 				<ContactCard contact={contact} key={contact.name} />
 			))}

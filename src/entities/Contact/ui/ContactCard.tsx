@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Icon } from '@/shared/ui/Icon/Icon';
+import { Text, TextSize } from '@/shared/ui/Text/Text';
 import cls from './ContactCard.module.scss';
 import { Contact } from '../model/types/types';
 
@@ -25,7 +26,7 @@ export const ContactCard = memo((props: ContactCardProps) => {
 					{contact.icon ? (
 						<Icon Svg={contact?.icon} className={cls.icon} />
 					) : null}
-					{contact.name}
+					<Text size={TextSize.L} text={contact.name} />
 				</div>
 			</a>
 		</div>
