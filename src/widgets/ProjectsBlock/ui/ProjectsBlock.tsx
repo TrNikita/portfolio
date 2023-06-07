@@ -19,7 +19,7 @@ export const ProjectsBlock = memo((props: ProjectsBlockProps) => {
 
 	return (
 		<div id={id} className={classNames(cls.ProjectsBlock, {}, [className])}>
-			{title ? t(title) : null}
+			{title ? <div className={cls.title}>{t(title)}</div> : null}
 			{data.map((project) => (
 				<ProjectCard project={project} key={project.id} />
 			))}

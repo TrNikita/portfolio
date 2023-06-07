@@ -7,11 +7,15 @@
     align-items: center;
     justify-content: end;
 
-    width: 100%;
+    // max-width: 1200px;
+    max-width: 100%;
     height: var(--navbar-height);
-    padding: 10px 6vw;
+    padding: 6px 8vw;
 
     background: var(--bg-color);
+
+    // margin-right: auto;
+    // πmargin-left: auto;
 }
 
 .navItems {

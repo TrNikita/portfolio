@@ -84,6 +84,7 @@
 		"react-dom": "^18.2.0",
 		"react-i18next": "^11.18.3",
 		"react-router-dom": "^6.2.1",
-		"react-scroll": "^1.8.9"
+		"react-scroll": "^1.8.9",
+		"react-use-gesture": "^9.1.3"
 	}
 }
