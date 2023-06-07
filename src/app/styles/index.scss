@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables/global";
+@import "variables/text";
 @import "themes/dark";
 @import "themes/normal";
 
@@ -14,10 +15,6 @@
     min-height: 100vh;
     background: var(--bg-color);
     transition: background-color 0.2s ease-in-out;
-}
-
-.content-page {
-    display: flex;
 }
 
 *::-webkit-scrollbar {
@@ -35,16 +32,16 @@
     border-radius: 20px;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 3000px) {
     :root {
         font-size: 18px;
         line-height: 24px;
     }
 
     h1 {
-        margin-bottom: 1rem;
-        font-size: 2.6rem;
-        line-height: 3.5rem;
+        margin-bottom: 16px;
+        font-size: 42px;
+        line-height: 56px;
     }
 }
 
@@ -55,15 +52,15 @@
     }
 
     h1 {
-        font-size: 2.375rem;
-        line-height: 3.5rem;
+        font-size: 38px;
+        line-height: 56px;
     }
 }
 
 @media screen and (max-width: 841px) {
     h1 {
-        margin-bottom: 0.6rem;
-        font-size: 1.6rem;
-        line-height: 2.5rem;
+        margin-bottom: 10px;
+        font-size: 26px;
+        line-height: 40px;
     }
 }
