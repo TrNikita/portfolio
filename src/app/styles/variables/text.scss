@@ -16,7 +16,7 @@
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 }
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 3000px) {
     :root {
         // s
         --font-size-s: 16px;
@@ -39,20 +39,20 @@
 @media screen and (max-width: 1260px) {
     :root {
         // s
-        --font-size-s: 12px;
-        --font-line-s: 20px;
+        --font-size-s: 14px;
+        --font-line-s: 22px;
 
         // m
-        --font-size-m: 20px;
-        --font-line-m: 28px;
+        --font-size-m: 22px;
+        --font-line-m: 30px;
 
         // l
-        --font-size-l: 28px;
-        --font-line-l: 36px;
+        --font-size-l: 30px;
+        --font-line-l: 38px;
 
         // xl
-        --font-size-xl: 36px;
-        --font-line-xl: 44px;
+        --font-size-xl: 38px;
+        --font-line-xl: 46px;
     }
 }
 
@@ -73,5 +73,25 @@
         // xl
         --font-size-xl: 36px;
         --font-line-xl: 44px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        // s
+        --font-size-s: 10px;
+        --font-line-s: 18px;
+
+        // m
+        --font-size-m: 18px;
+        --font-line-m: 26px;
+
+        // l
+        --font-size-l: 26px;
+        --font-line-l: 34px;
+
+        // xl
+        --font-size-xl: 34px;
+        --font-line-xl: 42px;
     }
 }
