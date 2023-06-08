@@ -1,14 +1,13 @@
-import { useSprings, animated, to as interpolate } from '@react-spring/web';
+import { animated, to as interpolate, useSprings } from '@react-spring/web';
 import React, { useState } from 'react';
 import { useDrag } from 'react-use-gesture';
-import styles from './Deck.module.scss';
-import Photo from '../../../../public/photo.png';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import cls from './Deck.module.scss';
 
-const cards = [
-	'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
-	'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
-	Photo,
-];
+interface DeckProps {
+	className?: string;
+	cards: string[];
+}
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i: number) => ({
@@ -25,7 +24,7 @@ const trans = (r: number, s: number) =>
 		r / 10
 	}deg) rotateZ(${r}deg) scale(${s})`;
 
-export function Deck() {
+export function Deck({ cards, className }: DeckProps) {
 	const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
 	const [props, api] = useSprings(cards.length, (i) => ({
 		...to(i),
@@ -73,10 +72,10 @@ export function Deck() {
 	);
 	// Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
 	return (
-		<div className={styles.container}>
+		<div className={classNames(cls.DeckBlock, {}, [className])}>
 			{/* eslint-disable-next-line react/prop-types */}
 			{props.map(({ x, y, rot, scale }, i) => (
-				<animated.div className={styles.deck} key={i} style={{ x, y }}>
+				<animated.div className={cls.deck} key={i} style={{ x, y }}>
 					{/* This is the Deck itself, we're binding our gesture to it (and inject its index so we know which is which) */}
 					<animated.div
 						{...bind(i)}
