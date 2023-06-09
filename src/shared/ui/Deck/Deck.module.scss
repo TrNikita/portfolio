@@ -20,15 +20,23 @@
     will-change: transform;
 
     width: 45vh;
-    max-width: 400px;
+    max-width: 330px;
     height: 85vh;
-    max-height: 450px;
+    max-height: 380px;
 
     object-fit: cover;
     background-color: white;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: auto 85%;
+    background-size: auto 90%;
     border-radius: 10px;
     box-shadow: 0 12.5px 100px -10px rgb(50 50 73 / 40%), 0 10px 10px -10px rgb(50 50 73 / 30%);
+}
+
+@media screen and (max-width: 500px) {
+    .deck > div {
+        max-width: 250px;
+        max-height: 300px;
+        background-size: auto 90%;
+    }
 }
