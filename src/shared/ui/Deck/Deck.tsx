@@ -15,9 +15,9 @@ const to = (i: number) => ({
 	y: i * -4,
 	scale: 1,
 	rot: -10 + Math.random() * 20,
-	delay: i * 100,
+	delay: i * 10,
 });
-const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
+const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.1, y: -50 });
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r: number, s: number) =>
 	`perspective(1500px) rotateX(10deg) rotateY(${
@@ -40,7 +40,7 @@ export function Deck({ cards, className }: DeckProps) {
 			velocity,
 		}) => {
 			const trigger = velocity > 0.2; // If you flick hard enough it should trigger the Deck to fly out
-			const dir = xDir < 0 ? -0.5 : 0.5; // Direction should either point left or right
+			const dir = xDir < 0 ? -0.4 : 0.4; // Direction should either point left or right
 			if (!down && trigger) gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the Deck ready to fly out
 			api.start((i) => {
 				if (index !== i) return; // We're only interested in changing spring-data for the current spring
