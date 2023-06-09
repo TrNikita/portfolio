@@ -7,20 +7,17 @@
     align-items: center;
     justify-content: end;
 
-    // max-width: 1200px;
     max-width: 100%;
     height: var(--navbar-height);
     padding: 6px 8vw;
 
     background: var(--bg-color);
-
-    // margin-right: auto;
-    // πmargin-left: auto;
 }
 
 .navItems {
     margin-right: 16px;
 
+    // для подчеркивания
     a {
         position: relative;
         line-height: 1;
@@ -62,4 +59,62 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
+}
+
+.navScreen {
+    display: flex;
+}
+
+.BurgerButton {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .Navbar {
+        padding-right: 12px;
+    }
+
+    .BurgerButton {
+        display: grid;
+    }
+
+    .navScreen {
+        position: fixed;
+        top: var(--navbar-height);
+        right: 0;
+        bottom: 0;
+        left: 100%;
+
+        flex-direction: column;
+
+        font: var(--font-xl);
+        text-align: center;
+
+        background-color: inherit;
+
+        transition: left 0.4s ease-in-out;
+    }
+
+    .navItems {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+    }
+
+    .switchers {
+        display: none;
+    }
+
+    .lang {
+        font: var(--font-xl);
+    }
+
+    .collapsed {
+        left: 0;
+
+        .switchers {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

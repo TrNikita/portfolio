@@ -6,10 +6,11 @@ import cls from './ScrollToLink.module.scss';
 interface ScrollToLinkProps extends LinkProps {
 	className?: string;
 	children?: ReactNode;
+	onClick?: () => void;
 }
 
 export const ScrollToLink = memo((props: ScrollToLinkProps) => {
-	const { to, className, children } = props;
+	const { to, className, children, onClick } = props;
 
 	const [navbarHeight, setNavbarHeight] = useState(0);
 
@@ -34,6 +35,7 @@ export const ScrollToLink = memo((props: ScrollToLinkProps) => {
 				duration={500}
 				// offset={-navbarHeight}
 				className={classNames(cls.ScrollToLink, {}, [className])}
+				onClick={onClick}
 			>
 				{children}
 			</Link>
