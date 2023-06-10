@@ -16,7 +16,7 @@ export const List = memo((props: ListProps) => {
 		<div className={classNames(cls.List, {}, [className])}>
 			{items?.map((item) => (
 				<ul key={item} className={cls.itemsList}>
-					<li className={cls.item}> - {item}</li>
+					<li className={cls.item}>{item}</li>
 				</ul>
 			))}
 		</div>

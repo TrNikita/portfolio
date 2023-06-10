@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { Card, CardTheme } from '@/shared/ui/Card/Card';
 import { List } from '@/shared/ui/List';
 import cls from './CourseCard.module.scss';
 import { Course } from '../model/types/types';
@@ -16,13 +17,22 @@ export const CourseCard = memo((props: CourseCardProps) => {
 
 	return (
 		<div className={classNames(cls.CourseCard, {}, [className])}>
-			<div className={cls.title}>{course.title}</div>
-			<a className={cls.link} href={course.link} target="_blank" rel="noreferrer">
-				<div className={cls.school}>{course.school}</div>
-			</a>
-			<div className={cls.duration}>{course.duration}</div>
+			<Card theme={CardTheme.OUTLINED}>
+				<Card className={cls.title}>
+					<a
+						className={cls.link}
+						href={course.link}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className={cls.title}>{course.title}</div>
+					</a>
+					<div className={cls.school}>{course.school}</div>
+					<div className={cls.duration}>{course.duration}</div>
+				</Card>
 
-			{<List items={course.skills} />}
+				{<List items={course.skills} className={cls.listItem} />}
+			</Card>
 		</div>
 	);
 });
