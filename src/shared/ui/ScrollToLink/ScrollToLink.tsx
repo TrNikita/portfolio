@@ -1,6 +1,6 @@
 import React, { memo, ReactNode, useEffect, useState } from 'react';
 import { Link, LinkProps } from 'react-scroll';
-import { classNames, Mods } from '@/shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ScrollToLink.module.scss';
 
 interface ScrollToLinkProps extends LinkProps {
@@ -22,10 +22,6 @@ export const ScrollToLink = memo((props: ScrollToLinkProps) => {
 		}
 	}, []);
 
-	const mods: Mods = {
-		[cls.editing]: true,
-	};
-
 	return (
 		<>
 			<Link
@@ -33,7 +29,6 @@ export const ScrollToLink = memo((props: ScrollToLinkProps) => {
 				hashSpy
 				smooth
 				duration={500}
-				// offset={-navbarHeight}
 				className={classNames(cls.ScrollToLink, {}, [className])}
 				onClick={onClick}
 			>
