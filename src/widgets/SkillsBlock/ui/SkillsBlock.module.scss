@@ -10,7 +10,7 @@
 .skills {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 4vh;
 
     :hover {
@@ -26,15 +26,9 @@
     font: var(--font-xl);
 }
 
-@media screen and (max-width: 841px) {
+@media screen and (max-width: 500px) {
     .SkillsBlock {
         height: 100%;
         padding: 0 2vh;
-    }
-}
-
-@media screen and (max-height: 670px) {
-    .SkillsBlock {
-        height: 100%;
     }
 }

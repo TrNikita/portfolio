@@ -1,5 +1,7 @@
 .SkillCard {
-    padding: 1rem;
+    min-width: 160px;
+    padding: 6px;
+    text-align: center;
 }
 
 .title {
@@ -13,16 +15,14 @@
     height: 6rem;
 }
 
-@media screen and (max-width: 840px) {
-    .icon {
-        width: 5rem;
-        height: 5rem;
+@media screen and (max-width: 500px) {
+    .SkillCard {
+        min-width: 80px;
+        max-width: 80px;
     }
-}
 
-@media screen and (max-width: 600px) {
     .icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
