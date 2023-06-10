@@ -1,5 +1,5 @@
 .ContactsBlock {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--footer-height));
     padding-top: var(--navbar-height);
     padding-right: 5vw;
     padding-left: 5vw;

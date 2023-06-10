@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '@/shared/data';
+import { Footer } from '@/shared/ui/Footer/Footer';
 import { About } from '@/widgets/About';
 import { ContactsBlock } from '@/widgets/ContactsBlock';
 import { CoursesBlock } from '@/widgets/CoursesBlock';
@@ -16,6 +17,7 @@ export const MainPage = () => {
 			<ProjectsBlock {...data.projects} />
 			<CoursesBlock {...data.courses} />
 			<ContactsBlock {...data.contacts} />
+			<Footer />
 		</>
 	);
 };
