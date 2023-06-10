@@ -19,8 +19,8 @@
 .deck > div {
     will-change: transform;
 
-    width: 45vh;
-    max-width: 330px;
+    width: 50vh;
+    max-width: 350px;
     height: 85vh;
     max-height: 380px;
 
@@ -35,8 +35,8 @@
 
 @media screen and (max-width: 650px) {
     .deck > div {
-        max-width: 250px;
-        max-height: 300px;
+        max-width: 230px;
+        max-height: 250px;
         background-size: auto 90%;
     }
 }

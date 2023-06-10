@@ -16,7 +16,10 @@ export const About = memo((props: AboutProps) => {
 	const { t } = useTranslation();
 	const { className, id } = props;
 
-	const cards = [Photo_1, Photo_1, Photo_1, Photo_1];
+	const cards = [
+		Photo_2,
+		Photo_1,
+	];
 
 	return (
 		<div id={id} className={classNames(cls.About, {}, [className])}>

@@ -18,7 +18,6 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 	const [collapsed, setCollapsed] = useState(false);
 	const onToggle = () => {
 		setCollapsed((prev) => !prev);
-		console.log(collapsed);
 	};
 
 	const mods: Mods = {
@@ -50,7 +49,11 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 					</div>
 				</div>
 
-				<BurgerButton onClick={onToggle} className={cls.BurgerButton} />
+				<BurgerButton
+					className={cls.BurgerButton}
+					onClick={onToggle}
+					checked={collapsed}
+				/>
 			</header>
 		</>
 	);
