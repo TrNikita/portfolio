@@ -4,7 +4,7 @@
     align-items: center;
 
     max-width: 1200px;
-    height: calc(100vh - var(--navbar-height));
+    min-height: calc(100vh - var(--navbar-height));
     margin-right: auto;
     margin-left: auto;
     padding-top: var(--navbar-height);
@@ -19,9 +19,10 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        padding-bottom: 150px;
     }
 
     .imageBlock {
-        margin-top: 22vh;
+        margin-top: 20vh;
     }
 }
