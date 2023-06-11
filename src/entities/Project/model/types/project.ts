@@ -5,4 +5,5 @@ export interface Project {
 	mainLink?: string;
 	gitLink?: string;
 	img?: string;
+	tools?: string[];
 }
