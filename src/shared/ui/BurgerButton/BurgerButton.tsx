@@ -13,11 +13,16 @@ export const BurgerButton = memo((props: BurgerButtonProps) => {
 
 	return (
 		<div className={classNames(cls.BurgerButton, {}, [className])}>
-			<label htmlFor="check">
-				<input onClick={onClick} type="checkbox" id="check" checked={checked} />
-				<span></span>
-				<span></span>
-				<span></span>
+			<input
+				type="checkbox"
+				id="menu"
+				onClick={onClick}
+				checked={checked}
+			/>
+			<label htmlFor="menu">
+				<div></div>
+				<div></div>
+				<div></div>
 			</label>
 		</div>
 	);
