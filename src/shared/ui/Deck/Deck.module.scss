@@ -33,6 +33,14 @@
     box-shadow: 0 12.5px 100px -10px rgb(50 50 73 / 40%), 0 10px 10px -10px rgb(50 50 73 / 30%);
 }
 
+@media screen and (max-width: 841px) {
+    .deck > div {
+        max-width: 240px;
+        max-height: 270px;
+        background-size: auto 90%;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .deck > div {
         max-width: 230px;
