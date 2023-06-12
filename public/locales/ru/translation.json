@@ -9,6 +9,9 @@
   "Тень": "Тень",
   "aboutGreetings": "Привет! \uD83D\uDC4B",
   "aboutTitle": "Я Никита - Frontend React Разработчик",
-  "aboutText": "Имею опыт разработки Web - приложений на JavaScript / Typescript / Reactjs / Nodejs с использованием различных библиотек и технологий.",
-  "Nikita Trokhov": "Никита Трохов"
+  "aboutText": "Разрабатываю Web - приложения на JavaScript / Typescript / Reactjs / Nodejs с использованием различных библиотек и технологий.",
+  "Nikita Trokhov": "Никита Трохов",
+  "STACK": "СТЕК",
+  "Демо": "Демо",
+  "Git": "Открыть проект в Git"
 }

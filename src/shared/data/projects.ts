@@ -7,7 +7,7 @@ export const projects = {
 			title: 'Fast Company',
 			status: 'DONE',
 			description: 'Приложение для быстрых встреч',
-			mainLink: '',
+			mainLink: 'https://github.com/TrNikita/fast-company',
 			gitLink: 'https://github.com/TrNikita/fast-company',
 			img: '',
 			tools: [

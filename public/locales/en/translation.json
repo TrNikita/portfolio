@@ -10,5 +10,8 @@
   "aboutGreetings": "Hi! \uD83D\uDC4B",
   "aboutTitle": "I'm Nikita - Frontend React Developer",
   "aboutText": "Having an experience of building Web apps with JavaScript / Typescript / Reactjs / Nodejs and some other cool libraries.",
-  "Nikita Trokhov": "Nikita Trokhov"
+  "Nikita Trokhov": "Nikita Trokhov",
+  "STACK": "STACK",
+  "Демо": "Demo",
+  "Git": "Open in Git"
 }

@@ -1,3 +1,23 @@
 .ProjectCard {
+    padding-bottom: 6px;
+}
 
+.title {
+    font: var(--font-l);
+}
+
+.description {
+    padding: 18px 6px;
+}
+
+.linksBlock {
+    display: flex;
+}
+
+.link {
+    margin: 2px 6px;
+}
+
+.stack {
+    padding: 6px 12px;
 }
