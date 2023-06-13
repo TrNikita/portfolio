@@ -28,8 +28,14 @@ export const CourseCard = memo((props: CourseCardProps) => {
 						<div className={cls.title}>{course.title}</div>
 					</a>
 					<div className={cls.school}>{course.school}</div>
-					<div className={cls.duration}>{course.duration}</div>
 				</Card>
+
+				<div className={cls.duration}>
+					<Card theme={CardTheme.SECOND}
+					>
+						{course.duration}
+					</Card>
+				</div>
 
 				{<List items={course.skills} className={cls.listItem} />}
 			</Card>
