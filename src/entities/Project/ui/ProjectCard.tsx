@@ -21,7 +21,9 @@ export const ProjectCard = memo((props: ProjectCardProps) => {
 				<Card theme={CardTheme.NORMAL} className={cls.title}>
 					{project.title}
 				</Card>
-				<div className={cls.description}>{project.description}</div>
+				<div className={cls.description}>
+					{t(`${project.description}`)}
+				</div>
 				<div className={cls.linksBlock}>
 					{project.mainLink && (
 						<Card theme={CardTheme.SECOND} className={cls.link}>
