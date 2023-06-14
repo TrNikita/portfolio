@@ -1,5 +1,8 @@
 .ContactsBlock {
+    max-width: 1400px;
     min-height: calc(100vh - var(--footer-height));
+    margin-right: auto;
+    margin-left: auto;
     padding-top: var(--navbar-height);
     padding-right: 5vw;
     padding-left: 5vw;
