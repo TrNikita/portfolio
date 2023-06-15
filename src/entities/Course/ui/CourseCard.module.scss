@@ -7,18 +7,13 @@
 }
 
 .duration {
-    display: flex;
-    padding-top: 6px;
     font: var(--font-m);
     font-style: italic;
 }
 
 .school {
-    font: var(--font-m);
-}
-
-.link {
-    text-decoration: underline;
+    display: flex;
+    padding-top: 6px;
 }
 
 .listItem {
