@@ -26,26 +26,26 @@ export const ProjectCard = memo((props: ProjectCardProps) => {
 				</div>
 				<div className={cls.linksBlock}>
 					{project.mainLink && (
-						<Card theme={CardTheme.SECOND} className={cls.link}>
-							<a
-								href={project.mainLink}
-								target="_blank"
-								rel="noreferrer"
-							>
+						<a
+							href={project.mainLink}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Card theme={CardTheme.SECOND} className={cls.link}>
 								{t('Демо')}
-							</a>
-						</Card>
+							</Card>
+						</a>
 					)}
 					{project.gitLink && (
-						<Card theme={CardTheme.SECOND} className={cls.link}>
-							<a
-								href={project.gitLink}
-								target="_blank"
-								rel="noreferrer"
-							>
+						<a
+							href={project.gitLink}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Card theme={CardTheme.SECOND} className={cls.link}>
 								{t('Git')}
-							</a>
-						</Card>
+							</Card>
+						</a>
 					)}
 				</div>
 				<div className={cls.stack}>

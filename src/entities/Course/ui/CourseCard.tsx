@@ -24,15 +24,9 @@ export const CourseCard = memo((props: CourseCardProps) => {
 				</Card>
 
 				<div className={cls.school}>
-					<Card theme={CardTheme.SECOND}>
-						<a
-							href={course.link}
-							target="_blank"
-							rel="noreferrer"
-						>
-							{course.school}
-						</a>
-					</Card>
+					<a href={course.link} target="_blank" rel="noreferrer">
+						<Card theme={CardTheme.SECOND}>{course.school}</Card>
+					</a>
 				</div>
 
 				{<List items={course.skills} className={cls.listItem} />}

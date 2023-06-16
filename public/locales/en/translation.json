@@ -18,5 +18,6 @@
   "FastCompanyDesc": "Client-server dating application. Written in Javascript / React / Nodejs. The frontend features adding to favorites, commenting on profiles, sorting, pagination, etc. The backend uses MongoDB, JWT-Tokens for authorization.",
   "OnlineStoreDesc": "Universal online store with an admin panel and the ability to create your own categories and fill them with products, as well as edit and delete them from the admin side. Written in Javascript / React / Nodejs. The backend uses a MongoDB database, JWT-Tokens for authorization, role restrictions on the backend side.",
   "PortfolioDesc": "Personalized developer portfolio with light/dark theme switching and internationalization features. The architecture of the application is based on Feature-Sliced Design.",
-  "EslintPluginDesc": "Eslint's own plugin, has three check options: 1. prohibits absolute import within a single module; 2. checks if layers are used correctly in terms of Feature-Sliced Design (for example, widgets cannot be used in features and entities); 3. allows import from other modules only from the public API. Has an automatic fix."
+  "EslintPluginDesc": "Eslint's own plugin, has three check options: 1. prohibits absolute import within a single module; 2. checks if layers are used correctly in terms of Feature-Sliced Design (for example, widgets cannot be used in features and entities); 3. allows import from other modules only from the public API. Has an automatic fix.",
+  "Страница не найдена": "Page not found"
 }
